@@ -1,0 +1,14 @@
+--- v-bind --- 
+ - Dynamically binds an attribute to an expression ( a variable )
+ - v-bind:attribute="expression or variable" equivalent to :attribute="expression
+
+--- v-if ---
+ - helps with condition rendering
+ - it removes the element not shown from the dom
+
+--- v-show --- 
+ - shows or hide an element with a condition
+ - it keeps the element in the dom with "display-none" style 
+
+--- v-for ---
+ - loop over an array in order to create a list of the element of the array
