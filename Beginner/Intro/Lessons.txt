@@ -12,3 +12,38 @@
 
 --- v-for ---
  - loop over an array in order to create a list of the element of the array
+
+ --- v-on ---
+  - listen to the events we specify
+  - v-on:event="function or expression" equivalent @event="function or expression"
+
+--- style binding ---
+<p :style="{"font-size" : fontSize}"/>
+data : {
+    color : "red",
+    fontSize : "13px"
+}
+
+<p :style="styleObject"/>
+data : {
+    styleObject : {
+        color : "red",
+        fontSize : "13px"
+    }   
+}
+
+<p :style="[styleObject1 , styleObject2]"/>
+data : {
+    styleObject1 : {
+        color : "red",
+        fontSize : "13px"
+    } 
+    styleObject2 : {
+        color : "red",
+        fontSize : "13px"
+    }   
+}
+
+
+--- Computed ---
+ - the results is cashed until the dependencies is changed
