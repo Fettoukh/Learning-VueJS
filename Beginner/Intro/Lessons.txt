@@ -47,3 +47,21 @@ data : {
 
 --- Computed ---
  - the results is cashed until the dependencies is changed
+
+ --- Components ---
+  - vue.component("name of the component" , {
+      props : [message] or
+      props : {
+          message : {
+              type:String,
+              required : true,
+              default : "Hi"
+          }
+      }
+      template : ` <div>{{message}}</div>`,
+      data() { // it s a function and not an object like (new vue) so each component will have its own unique data
+          return {
+
+          }
+      }
+  })
